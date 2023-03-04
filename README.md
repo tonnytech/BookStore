@@ -1,215 +1,185 @@
 <a name="readme-top"></a>
 
-<div align="center">
- 
-  <h3><b>Math Magicians</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Bookstore\] ](#-bookstore-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo and other links ](#-live-demo-and-other-links-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math Magicians <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
-**Math Magicians** is a Single Page Application developed using React and Redux. We use the `create-react-app` build tool for development. The core component of the project is a calculator component that allows users to perform arithmetic operations.
+> The bookstore is an MVP version of a previously built app, awesome books. It is a Single Page App (SPA) that allows users to:
+
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+The major tools and languages used are:
+
+- REACT
+- JavaScript
+<!-- Features -->
 ### Tech Stack <a name="tech-stack"></a>
 
+> The following tech stack were used
+
 <details>
-  <summary>Client</summary>
+  <summary>REACT</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">REACT</a></li>
   </ul>
 </details>
-
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Interactive Calculator**
-- **Math quotes**
+> The web app has the following key features:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **[Allows you to display a list of books]**
+- **[Add a book]**
+
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo and other links <a name="live-demo"></a>
 
-> Link will be added after deployment
+> Here, we will paste links as per the submission instructions.
 
-<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+- [Live Demo Link]()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+> In order to run this project you need:
 
-### Prerequisites
-
-In order to run this project you need the following installed in your local machine:
-
-<ul>
-<li>Node.js</li>
-<li>git</li>
-</ul>
+- Node js installed on your computer
+- Npm Node package manager
+- Terminal
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-Example commands:
-
-```sh
-  cd <desired-folder>
-  git clone https://github.com/teitonny/Math-Magicians.git
-  cd Math-Magicians
-```
+> https://github.com/teitonny/bookstore.git
 
 ### Install
 
 Install this project with:
 
-Example command:
-
 ```sh
-  npm install
+  cd my-project
+  npm install or npm i
 ```
-
-The above command installs necessary node modules used in the project
+-
 
 ### Usage
 
 To run the project, execute the following command:
 
-Example command:
-
 ```sh
-  npm run start
+ npm run build
 ```
-
-The above command opens the project webpage in your browser.
 
 ### Run tests
 
 To run tests, run the following command:
 
-
-Example command:
-
 ```sh
-npm run test
+ npm test or jest test
 ```
 
-The above command runs jest test suites in the project
-
-### Deployment
-
-You can deploy this project using:
-
-Example:
-
-```sh
-
-npm run build
-
-```
-
-The above command produces build files that can be deployed using Github pages or any other hosting service.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Kiyong Bohbo**
 
-👤 **Tonny Tei**
+- GitHub: [@teitonny](https://github.com/tonnytech)
+- Twitter: [@teitonny](https://twitter.com/tetonny)
+- LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
 
-- GitHub: [@teitonny](https://github.com/teitonny)
-- Twitter: [@teitonny](https://twitter.com/teitonny)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Mobile version**
-- **Responsive webpage**
+> The following two features will be added to this project;
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] **[A Books page]**
+- [ ] **[A categories page]**
+
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome.
 
-Feel free to check the [issues page](https://github.com/teitonny/math-magician/issues).
+Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please give a Start to the github repo.
+If you like this project, don't forget give a ⭐️ or buy me a coffee ☕️
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
->To be updated at the end of the project
+I would like to thank all my collaborators on this project and the Microverse student community.
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
+> Two possible questions new developers would ask when they decide to use this project.
 
-- **How to report bugs?**
+- **[]**
 
-  - Please raise [github issue](https://github.com/ram1117/math-magicians/issues) with more details about the bug.
+  - []
 
-- **What is the licensing policy of the project?**
+- **[]**
 
-  - The project is MIT licensed, please refer to the License section
+  - []
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- LICENSE -->
 
@@ -217,4 +187,4 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
