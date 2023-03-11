@@ -1,6 +1,8 @@
 /* eslint-disable */
 import { Link } from 'react-router-dom';
-import MenuCss from './Menu.module.css'
+import MenuCss from './Menu.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 const Menu =()=> {
     return (
         <div className={MenuCss.navContainer}>
@@ -16,7 +18,9 @@ const Menu =()=> {
                 </li>
             </ul>
 
-            <div className={MenuCss.Logo}>Logo</div>
+            <div className={MenuCss.Logo}>
+                <FontAwesomeIcon icon={faUser} className={MenuCss.userIcon}/>
+            </div>
         </div>
     )
 }
