@@ -8,7 +8,6 @@
   background-color: #fff;
   width: 100%;
   flex-wrap: nowrap;
-  margin-bottom: 2rem;
 }
 
 .navElements {
@@ -25,6 +24,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
+  text-decoration: none;
 }
 
 .Books {
@@ -32,7 +32,8 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  color: var(--black-two);
+  color: #121212;
+  text-decoration: none;
 }
 
 .Categories {
@@ -41,7 +42,8 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  color: var(--black-two);
+  color: #121212;
+  text-decoration: none;
 }
 
 .Logo {

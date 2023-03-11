@@ -5,14 +5,14 @@ const Menu =()=> {
     return (
         <div className={MenuCss.navContainer}>
             <ul className={MenuCss.navElements}>
-                <li className={MenuCss.BookstoreCMS}>
-                    <Link to="/" > Bookstore CMS </Link>
+                <li>
+                    <Link to="/" className={MenuCss.BookstoreCMS}> Bookstore CMS </Link>
                 </li>
-                <li className={MenuCss.Books}>
-                    <Link to="/" >Books</Link>
+                <li>
+                    <Link to="/" className={MenuCss.Books}>Books</Link>
                 </li>
-                <li className={MenuCss.Categories}>
-                    <Link to="/Categories" >Categories</Link>
+                <li>
+                    <Link to="/Categories" className={MenuCss.Categories} >Categories</Link>
                 </li>
             </ul>
 
