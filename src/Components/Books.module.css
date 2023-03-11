@@ -1,16 +1,17 @@
-.bookMainContainer{
+.bookMainContainer {
   background-color: #fafafa;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 0;
 }
+
 .bookContainer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
   margin-left: 6rem;
   margin-right: 6rem;
-  background-color: #FFF;
+  background-color: #fff;
   padding-left: 1.6rem;
   padding-right: 9.188rem;
   padding-top: 2rem;
@@ -164,7 +165,7 @@
   border: none;
   border-radius: 3px;
   background-color: #0290ff;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .bookActionButtons {
