@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, postBook } from '../redux/books/booksSlice';
 import BooksCss from './Books.module.css';
 
 const BookFrom = () => {
@@ -26,6 +26,8 @@ const BookFrom = () => {
         category,
       };
       dispatch(addBook(payload));
+      dispatch(postBook(payload));
+
       clearInputs();
     } else {
       clearInputs();
