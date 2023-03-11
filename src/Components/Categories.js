@@ -3,18 +3,17 @@ import { checkStatus } from '../redux/categories/categoriesSlice';
 
 const Categories = () => {
   const dispatch = useDispatch();
-  const categories = useSelector((state) => state.categories);
+  const cat = useSelector((state) => state.categories);
+  console.log(cat);
   return (
     <>
       <button
         type="button"
-        onClick={() => {
-          dispatch(checkStatus());
-        }}
+        onClick={() => dispatch(checkStatus())}
       >
         Check status
       </button>
-      <p>{categories}</p>
+      <p>{cat.categories}</p>
     </>
   );
 };
