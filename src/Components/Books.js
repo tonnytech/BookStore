@@ -1,41 +1,27 @@
 /* eslint-disable */
+import { useSelector, useDispatch } from 'react-redux';
 import BooksCss from './Books.module.css';
-
-const bookData = [
-    {
-        Genre: 'Action',
-        Title: 'The Hunger Games',
-        Author: 'Suzanne Collins',
-        percentage: '64%',
-    },
-    {
-        Genre: 'Science',
-        Title: 'Dune',
-        Author: 'Frank Herbert',
-        percentage: '8%',
-    },
-    {
-        Genre: 'Economy',
-        Title: 'Capital in Twenty ',
-        Author: 'Suzanne Collins',
-        percentage: '0%',
-    }
-]
+import BookFrom from './BookFrom';
+import { removeBook } from '../redux/books/booksSlice';
 
 const Books =()=> {
+    const dispatch = useDispatch();
+    const { books } = useSelector((state) => state.books);
+
+    const bookData = books;
     return (
         <>
         {bookData.map((bookInfo)=> (
             <div className={BooksCss.bookContainer}>
             <div className={BooksCss.bookDetails}>
-                <div className={BooksCss.bookGenre}> {bookInfo.Genre}</div>
-                <div className={BooksCss.bookTitle}> {bookInfo.Title}</div>
-                <div className={BooksCss.bookAuthor}> {bookInfo.Author}</div>
+                <div className={BooksCss.bookGenre}> {bookInfo.category}</div>
+                <div className={BooksCss.bookTitle}> {bookInfo.title}</div>
+                <div className={BooksCss.bookAuthor}> {bookInfo.author}</div>
                 <div>
                     <ul className={BooksCss.bookActionList}>
                         <li className={BooksCss.bookAction}>Comment</li>
-                        <li className={BooksCss.bookAction}>Remove</li>
-                        <li className={BooksCss.bookAction}>Edit</li>
+                        <li className={BooksCss.bookAction} onClick={()=>dispatch(removeBook(bookInfo.item_id))} >Remove</li>
+                        <li className={BooksCss.bookAction}>Edit</li> 
                     </ul>
                 </div>
             </div>
@@ -53,19 +39,11 @@ const Books =()=> {
             <div className="bookProgress">
                 <div className={BooksCss.currentChapter}>current chapter</div>
                 <div className={BooksCss.progressChapter}>chapter 17</div>
-                <button className={BooksCss.progressUpdate}>update progress</button>
+                <button className={BooksCss.progressUpdate} >update progress</button>
             </div>
         </div>
         ))}
-
-        <div>
-            <div>Add New Book</div>
-            <form className={BooksCss.formContainer}>
-                <input></input>
-                <input></input>
-                <button>Add Book</button>
-            </form>
-        </div>
+        <BookFrom />             
         </>
     )
 }
