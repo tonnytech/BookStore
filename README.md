@@ -1,8 +1,6 @@
 <a name="readme-top"></a>
 
-<div align="center">
- 
-  <h3><b>Math Magicians</b></h3>
+  <h3><b>Book Store</b></h3>
 
 </div>
 
@@ -26,34 +24,32 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math Magicians <a name="about-project"></a>
+# 📖 Book Store <a name="about-project"></a>
 
-**Math Magicians** is a Single Page Application developed using React and Redux. We use the `create-react-app` build tool for development. The core component of the project is a calculator component that allows users to perform arithmetic operations.
+**Book Store** is a  React application developed using React and Redux. I used `create-react-app` and `redux-toolkit` tools for development.A user can add a book to the App and update their reading progress, which will be persisted in an API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
+
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux-toolkit.js.org">Redux Toolkit</a></li>
   </ul>
-</details>
 
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Interactive Calculator**
-- **Math quotes**
+- **Use redux**
+- **Persist changes in API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,9 +57,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Link will be added after deployment
+The project is deployed in Render. Please find the link Live Demo link below
 
-<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+- [coming soon](https://bookstore-react-redux-vei5.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,25 +76,22 @@ In order to run this project you need the following installed in your local mach
 <ul>
 <li>Node.js</li>
 <li>git</li>
+<li>Github Account</li>
 </ul>
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-Example commands:
-
 ```sh
   cd <desired-folder>
-  git clone https://github.com/teitonny/Math-Magicians.git
-  cd Math-Magicians
+  git clone https://github.com/ram1117/bookstore-react-redux.git
+  cd bookstore-react-redux
 ```
 
 ### Install
 
 Install this project with:
-
-Example command:
 
 ```sh
   npm install
@@ -110,8 +103,6 @@ The above command installs necessary node modules used in the project
 
 To run the project, execute the following command:
 
-Example command:
-
 ```sh
   npm run start
 ```
@@ -120,22 +111,16 @@ The above command opens the project webpage in your browser.
 
 ### Run tests
 
-To run tests, run the following command:
-
-
-Example command:
+There are no test cases added in the project. You can add jest test cases and run 
+them with the following command.
 
 ```sh
 npm run test
 ```
 
-The above command runs jest test suites in the project
-
 ### Deployment
 
 You can deploy this project using:
-
-Example:
 
 ```sh
 
@@ -152,9 +137,9 @@ The above command produces build files that can be deployed using Github pages o
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Tonny Tei**
+👤 **Ram Kumar Karuppusamy**
 
-- GitHub: [@teitonny](https://github.com/teitonny)
+- GitHub: [@tonnytech](https://github.com/tonnytech)
 - Twitter: [@teitonny](https://twitter.com/teitonny)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -174,7 +159,7 @@ The above command produces build files that can be deployed using Github pages o
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/teitonny/math-magician/issues).
+Feel free to check the [issues page](https://github.com/tonnytech/bookstore-react-redux/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,17 +167,7 @@ Feel free to check the [issues page](https://github.com/teitonny/math-magician/i
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please give a Start to the github repo.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
->To be updated at the end of the project
-
-I would like to thank...
+If you like this project, please give a Start to the [github repo](https://github.com/tonnytech/bookstore-react-redux).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,7 +178,7 @@ I would like to thank...
 
 - **How to report bugs?**
 
-  - Please raise [github issue](https://github.com/ram1117/math-magicians/issues) with more details about the bug.
+  - Please raise [github issue](https://github.com/tonnytech/bookstore-react-redux/issues) with more details about the bug.
 
 - **What is the licensing policy of the project?**
 
