@@ -1,29 +1,24 @@
+/* eslint-disable */
 import { createSlice } from '@reduxjs/toolkit';
+import books from '../state/StateSlice';
 
-const bookItems = [];
-const initialState = {
-  bookItems,
-  total: 0,
-  isLoading: true,
-};
+const initialState = { books };
 
 const booksSlice = createSlice({
-  name: 'Books',
+  name: 'books',
   initialState,
   reducers: {
-    AddBook: (state, action) => {
-      const states = state;
-      const ItemId = action.payload;
-      states.bookItems = state.bookItems.push(ItemId);
+    addBook: (state, action) => {
+      state.books = [...state.books, action.payload];
+      console.log(state.books)
     },
-    removeBook: (state, action) => {
-      const states = state;
-      const ItemId = action.payload;
-      states.bookItems = state.bookItems.filter((item) => item.id !== ItemId);
-    },
+    removeBook: (state, { payload }) => ({
+      ...state,
+      books: state.books.filter((book) => book.item_id !== payload),
+    }),
   },
 });
 
-export const { AddBook, removeBook } = booksSlice.actions;
+export const { addBook, removeBook } = booksSlice.actions;
 
 export default booksSlice.reducer;
