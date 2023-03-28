@@ -2,11 +2,21 @@
 import { useSelector, useDispatch } from 'react-redux';
 import BooksCss from './Books.module.css';
 import BookFrom from './BookFrom';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBook, deleteApiBook, fetchBooks } from '../redux/books/booksSlice';
+import { useEffect } from 'react';
 
 const Books =()=> {
     const dispatch = useDispatch();
     const { books } = useSelector((state) => state.books);
+
+    const removeHandler = (removeId) => {
+        dispatch(removeBook(removeId)),
+        dispatch(deleteApiBook(removeId));
+    };
+
+     useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
 
     const bookData = books;
     return (
@@ -21,7 +31,7 @@ const Books =()=> {
                     <ul className={BooksCss.bookActionList}>
                         <li className={BooksCss.bookAction}> <button>Comment</button></li>
                         <li className={BooksCss.bookAction} onClick={()=>dispatch(removeBook(bookInfo.item_id))}><button>Remove</button></li>
-                        <li className={BooksCss.bookAction}><button>Edit</button></li> 
+                        <li className={BooksCss.bookAction}><button>Edit</button></li>
                     </ul>
                 </div>
             </div>
