@@ -29,9 +29,9 @@ const Books =()=> {
                 <div className={BooksCss.bookAuthor}> {bookInfo.author}</div>
                 <div>
                     <ul className={BooksCss.bookActionList}>
-                        <li className={BooksCss.bookAction}>Comment</li>
-                        <li className={BooksCss.bookAction} onClick={()=> (removeHandler(bookInfo.item_id))}>Remove</li>
-                        <li className={BooksCss.bookAction}>Edit</li>
+                        <li className={BooksCss.bookAction}> <button>Comment</button></li>
+                        <li className={BooksCss.bookAction} onClick={()=>dispatch(removeBook(bookInfo.item_id))}><button>Remove</button></li>
+                        <li className={BooksCss.bookAction}><button>Edit</button></li>
                     </ul>
                 </div>
             </div>
