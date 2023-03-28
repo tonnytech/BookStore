@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook, postBook } from '../redux/books/booksSlice';
-import BooksCss from './Books.module.css';
+import BookFormCss from './BookForm.module.css';
 
 const BookFrom = () => {
   const dispatch = useDispatch();
@@ -36,15 +36,17 @@ const BookFrom = () => {
 
   const books = 'Add Books';
   return (
-    <div>
-      <div>Add New Book</div>
-      <form className={BooksCss.formContainer}>
+    <div className={BookFormCss.FormContainer}>
+      <hr className={BookFormCss.Divider} />
+      <div className={BookFormCss.Title}>Add New Book</div>
+      <form className={BookFormCss.formContainer}>
         <input
           type="text"
           name="title"
           value={title}
           placeholder="Book Title"
           onChange={(e) => setTitle(e.target.value)}
+          className={BookFormCss.BookInput}
           required
         />
         <input
@@ -53,6 +55,7 @@ const BookFrom = () => {
           value={author}
           placeholder="Book Author"
           onChange={(e) => setAuthor(e.target.value)}
+          className={BookFormCss.CategoryInput}
           required
         />
         <input
@@ -61,9 +64,10 @@ const BookFrom = () => {
           value={category}
           placeholder="Book Category"
           onChange={(e) => setCategory(e.target.value)}
+          className={BookFormCss.CategoryInput}
           required
         />
-        <button type="submit" onClick={onsubmitHandler}>
+        <button type="submit" onClick={onsubmitHandler} className={BookFormCss.FormSubmit}>
           {books}
         </button>
       </form>
