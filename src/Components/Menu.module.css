@@ -6,7 +6,7 @@
   padding-left: 0.3rem;
   padding-right: 0.3rem;
   background-color: #fff;
-  /* width: 100%; */
+  width: 100%;
   flex-wrap: nowrap;
 }
 
@@ -70,6 +70,7 @@
   .navElements {
     gap: unset;
     padding-left: unset;
+    padding-right: 15rem;
   }
 
   .BookstoreCMS {
